@@ -54,7 +54,12 @@ header {
   font-weight: 500;
 }
 .logo {
-  margin: 10px 10px 10px 20px;
+  margin-left: 50px;
+  align-items: center;
+
+}
+.links{
+    margin-right: 50px;
 }
 ul {
   display: flex;
