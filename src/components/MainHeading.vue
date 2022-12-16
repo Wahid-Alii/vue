@@ -58,9 +58,7 @@ svg {
 }
 input {
   text-align: center;
-  background-color: honeydew;
-  margin-left: 5px;
-  margin-right: 5px;
+  background-color: whitesmoke;
 }
 .search-icon {
   color: gray;
