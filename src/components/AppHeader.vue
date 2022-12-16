@@ -72,7 +72,7 @@ ul {
 button {
   border-radius: 37px;
   border: 1px solid #e3ebe7;
-  background-color: white;
+  background-color: honeydew;
 }
 svg {
   color: rgb(93, 89, 89);
