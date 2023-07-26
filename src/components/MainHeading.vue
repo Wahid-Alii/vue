@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <template>
   <section>
     <div>
@@ -8,7 +5,16 @@
       <p>
         Using the search below, you can find any item that you are looking for.
       </p>
-      <div class="search">
+      <!-- Use the Modal component and pass the "showModal" prop -->
+    <modal :show="showModal">
+      <!-- Content inside the modal -->
+      <h2>Hello, I'm a modal!</h2>
+      <p>This is some modal content.</p>
+
+      <!-- Button to close the modal -->
+      <button @click="showModal = false">Close Modal</button>
+    </modal>
+      <div @click="showModal = true" class="search">
         <input type="text" placeholder="Iphone 13 Pro Max, Samsung Galaxy S22 . . " />
         <div class="search-icon">
           <svg
@@ -27,6 +33,20 @@
     </div>
   </section>
 </template>
+
+<script>
+import Modal from '../components/Modal.vue';
+export default{
+  components: {
+    Modal,
+  },
+  data(){
+    return{
+      showModal: false,
+    };
+  },
+};
+</script>
 
 <style scoped>
 section {
