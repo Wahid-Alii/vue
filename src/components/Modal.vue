@@ -1,23 +1,23 @@
 <template>
     <div class="modal" v-show="show">
-      <!-- Modal content goes here -->
-      <div class="modal-content">
-        <slot></slot>
-      </div>
+        <!-- Modal content goes here -->
+        <div class="modal-content">
+            <slot></slot>
+        </div>
     </div>
-  </template>
+</template>
   
-  <script>
-  export default {
+<script>
+export default {
     props: {
-      show: Boolean,
+        show: Boolean,
     },
-  };
-  </script>
+};
+</script>
   
-  <style>
-  /* Styles for the modal overlay */
-  .modal {
+<style>
+/* Styles for the modal overlay */
+.modal {
     /* Position the modal in the center of the screen */
     position: fixed;
     top: 0;
@@ -27,16 +27,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
-  }
-  
-  /* Styles for the modal content */
-  .modal-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black overlay */
+}
+
+/* Styles for the modal content */
+.modal-content {
     /* Customize the modal appearance as needed */
     background-color: white;
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  </style>
+    width: 50%;
+    height: 50% ;
+}
+</style>
   
